@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: uniroute-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: GOOGLE_MAPS_API_KEY
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: ALLOW_VERCEL_PREVIEWS
+        value: "false"

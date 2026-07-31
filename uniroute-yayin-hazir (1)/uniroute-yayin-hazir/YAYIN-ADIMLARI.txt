@@ -1,0 +1,20 @@
+UNIROUTE HIZLI YAYINLAMA
+========================
+
+1) ZIP'i bir klasöre çıkar.
+2) GitHub Desktop ile klasörü repository yap ve Publish Repository de.
+3) Render > New > Blueprint > GitHub repository seç.
+4) Render'da GOOGLE_MAPS_API_KEY değerini gir.
+5) Render API adresini kopyala.
+6) Vercel > Add New Project > repository seç.
+7) Root Directory olarak client seç.
+8) NEXT_PUBLIC_API_URL değerine Render adresini yaz. Sonunda /api yazma.
+9) Vercel Deploy'a bas.
+10) Vercel adresini kopyala.
+11) Render'da FRONTEND_URL değerine Vercel adresini yazıp yeniden deploy et.
+
+SONUÇ:
+Kullanıcılar yalnızca Vercel bağlantısını açacak. CMD veya Node.js kurmayacak.
+
+NOT:
+Gerçek Google API anahtarı güvenlik için pakete eklenmedi.

@@ -1,0 +1,13 @@
+{
+  "name": "uniroute",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n SERVER,CLIENT \"npm.cmd --prefix server run dev\" \"npm.cmd --prefix client run dev\"",
+    "build": "npm.cmd --prefix client run build",
+    "start": "concurrently -k -n SERVER,CLIENT \"npm.cmd --prefix server run start\" \"npm.cmd --prefix client run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}
